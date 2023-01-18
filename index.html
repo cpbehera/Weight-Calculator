@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solar system</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div>
+      <div class="massContainer">
+        <p>Please Enter your mass</p>
+        <input type="number" id="inputValue" />
+      </div>
+
+      <div class="planetContainer">
+        <p>Please Select your planet to visit</p>
+        <select name="selectPlanet" id="selectPlanet"></select>
+      </div>
+    </div>
+
+    <div class="button">
+      <button onclick="calcWeight()" id="button">Calculate weight</button>
+    </div>
+    <div id="imgDiv">
+      <img id="image" />
+      <h1 id="result"></h1>
+    </div>
+
+    <script src="planets_data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
